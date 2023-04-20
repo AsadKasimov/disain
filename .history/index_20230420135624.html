@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <header class="header">
+            <!-- Шапка -->
+            <div class="logo">
+                <img src="./img/Dananz.png" alt="">
+            </div>
+
+            <!-- Меню сайта -->
+            <nav class="nav">
+                <ul>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Services</li>
+                    <li>Our Teams</li>
+                    <li>Contact Us</li>
+                    
+                </ul>
+            </nav>
+
+            <!-- Иконка бургерменю -->
+            <div class="burger">
+                <span></span>
+            </div>
+        </header>
+        <div class="menu">
+            <div class="text-menu">
+                <h1>Design your interor with high quality.</h1>
+            </div>
+            <div class="text-line">
+                <hr class="text-line-l">
+                <div class="h-pic">
+                    <img src="./img/rec.png" alt="">
+                    <div class="img-t">
+                        <p>2022<br>ALL RIGHT RESERVED</p>
+                    </div>
+                </div>
+
+
+            </div>
+        <div class="room-pic">
+                    <img src="./img/unsplash_G7sE2S4Lab4.png" alt="">
+        </div>
+
+        </div>
+
+
+        <div class="h-pic2">
+            <img src="./img/rec.png" alt="">
+            <div class="img-t2">
+                <p>2022<br>ALL RIGHT RESERVED</p>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav').classList.toggle('open');
+        })
+    </script>
+</body>
+</html>

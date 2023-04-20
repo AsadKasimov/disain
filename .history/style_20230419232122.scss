@@ -1,0 +1,80 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100px;
+    padding: 0 40px;
+    .logo{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+    .nav{
+        display: flex;
+        width: 700px;
+        padding: 0 40px;
+        ul{
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    
+        }
+    }
+
+
+
+    .burger{
+        display: flex;
+        position: relative;
+        z-index: 50;
+        align-items: center;
+        justify-content: flex-end;
+        width: 30px;
+        height: 18px;
+
+        span{
+            height: 2px;
+            width: 80%;
+            transform: scale(1);
+            background-color: black;
+
+
+        }
+        &::before, &::after{
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background-color: #000;
+            transition: all 0.3s ease 0s;
+        }
+
+        &::before{
+            top: 0;
+        }
+        &::after{
+            bottom: 0;
+        }
+
+        &.active span{
+            transform: scale(0);
+
+            .active::before{
+                top: 50%;
+                transform: rotate(-45deg) translate(0, -50%);
+            }
+
+
+            
+        }
+
+
+
+    }
+
+}
+
