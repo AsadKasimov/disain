@@ -450,17 +450,8 @@ hr.text-line-l{
     width:100%;
   }
 
-  .btn-f-s {
-    width: 30%;
-    position: inherit;
-    z-index: 100;
-    background: white;
-}
-
   .back-photo{
-    width: 100%;
-    position: inherit;
-    margin-left: 0;
+    width: 330%;
   }
 
   .room-pic{
@@ -480,9 +471,6 @@ hr.text-line-l{
 
   .c-f-pic img{
     width: 100%;
-  }
-  .client-prof p{
-    width: 80%;
   }
 
   .client-prof img{

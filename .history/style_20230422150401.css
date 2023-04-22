@@ -458,9 +458,8 @@ hr.text-line-l{
 }
 
   .back-photo{
-    width: 100%;
+    width: 330%;
     position: inherit;
-    margin-left: 0;
   }
 
   .room-pic{
@@ -480,9 +479,6 @@ hr.text-line-l{
 
   .c-f-pic img{
     width: 100%;
-  }
-  .client-prof p{
-    width: 80%;
   }
 
   .client-prof img{
