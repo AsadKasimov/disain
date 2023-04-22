@@ -139,6 +139,9 @@ hr.text-line-l{
   display: flex;
   flex-direction: column;
   gap: 20px;
+  position: absolute;
+  z-index: 50;
+  width: 100%;
 }
 
 .h-pic2{
@@ -150,17 +153,15 @@ hr.text-line-l{
   justify-content: flex-end;
   align-items: flex-end;
   
-
 }
 
-.h-pic img{
-  position: relative;
+.room-pic img{
+  width: 90%;
 }
 
 .img-t {
   display: flex;
   padding-bottom: 30%;
-
 }
 
 .img-t p{
@@ -177,10 +178,311 @@ hr.text-line-l{
   padding-left: 10%;
   width: auto;
   height: auto;
-  z-index: 1; position: absolute;
+  position: absolute;
+  z-index: 0;
+}
+.about{
+  margin: 40% 10% 10%;
 }
 
+.about-t{
+  display: flex;
+  align-items: baseline;
+  
+}
+
+.about-t hr{
+  border: 1px black solid;
+  width: 50%;
+  height: 1px;
+
+}
+
+.c-f-pic img{
+  width: 100%;
+}
+
+.client-prof img{
+  width: 60%;
+}
+
+.service{
+  margin: 2% 10%;
+}
+
+.s-text{
+  display: flex;
+  align-items: baseline;
+}
+
+.s-text hr{
+  border: 1px black solid;
+  width: 50%;
+  height: 1px;
+
+}
+
+.client{
+  display: flex;
+  gap: 5%;
+}
+
+.comment-f-ab p{
+  font-weight: 500;
+  font-size: 5vh;
+}
+
+.client-prof p{
+  font-size: 2vh;  
+  width: 50%;
+}
+
+.but{
+  padding: 5% 7%;
+  color: #fff;
+  background: rgb(44,56,120);
+  width: max-content;
+}
+
+.s-t-base p:nth-child(1){
+  font-weight: 700;
+  font-size: 200%
+}
+
+.s-t-base p:nth-child(2){
+  font-size: 2vh;
+  width:30%;
+  margin: 2% 0;
+}
+
+.btn-f-s{
+  width: 30%;
+  position: absolute;
+  z-index: 100;
+  background: white;
+  
+}
+
+.back-photo{
+  width: 60%;
+  position: absolute;
+  z-index: 20;
+  margin-left: 10%;
+}
+
+
+.back-photo img{
+
+  width: 100%;
+}
+
+.item{
+  display: flex;
+  gap: 5%;
+  min-width: 100%;
+}
+
+.item p{
+  min-width: max-content;
+}
+
+.p-text hr{
+  border: 1px black solid;
+  width: 50%;
+  height: 1px;
+}
+
+.product{
+  margin: 35% 10% 2%;
+}
+
+.p-text{
+  display: flex;
+  align-items: baseline;
+}
+
+.p-base{
+  display: flex;
+  margin-top: 2%;
+  gap: 40%;
+
+}
+
+.p-base p:nth-child(2){
+  display: flex;
+  font-size: 12px;
+  width: 300px;
+}
+
+.row{
+  display: flex;
+  gap: 2%;
+  margin-bottom: 1%;
+  margin-top: 3%;
+}
+
+.row-t p{
+  font-size: 12px;
+  margin-left: 10%;
+} 
+
+.material{
+  margin: 2% 10%; 
+  display: flex;
+  gap: 10%;
+}
+
+.m-pic img{
+  width: 100%;
+}
+
+.m-text hr{
+  border: 1px black solid;
+  width: 50%;
+  height: 1px;
+}
+.m-text{
+  display: flex;
+  align-items: baseline;
+}
+
+
+
+.m-base p:nth-child(1){
+  font-size: 200%;
+  padding-bottom: 2%;
+  font-weight: 600;
+}
+
+.m-base p:nth-child(2){
+  font-size: 74%;
+  font-weight: 300;
+  padding-bottom: 4%;
+}
+
+.btn-m{
+  padding: 3% 4%;
+  background: rgb(44,56,120);
+  width: max-content;
+  color: white;
+}
+
+.add-bar{
+  background: rgb(44,56,120);
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  padding: 3% 0;
+}
+
+.a-b-text{
+  font-weight: 500;
+  font-size: 120%;
+}
+
+.c-text-w-btn p{
+  font-weight: 100;
+  font-size: 80%;
+
+}
+
+.btn-c{
+  padding: 2% 3%;
+  background: white;
+  width: max-content;
+  color: black;
+  margin-top: 2%;
+}
+
+.email-sub{
+  margin: 2% 10%; 
+  display: flex;
+  gap: 30%;
+}
+
+.e-btn{
+  margin-top: 2%;
+}
+
+.btn-text{
+  display: flex;
+}
+
+.e-input{
+  display: flex;
+  margin-top: 2%;
+}
+
+.e-input input{
+  border: 0;
+}
+
+.follow{
+  display: flex;
+  justify-content: flex-end;
+  margin: 2% 10%; 
+}
+
+.f-pic{
+  display: flex;
+  gap: 10%;
+}
+
+
 @media (max-width: 700px) {
+
+  .email-sub{
+    display: block;
+  }
+
+  .add-bar{
+    padding: 3% 3%;
+  }
+
+  .material{
+    display: block;
+  }
+
+  
+  .s-t-base p:nth-child(2){
+    font-size: 100%;
+    width:100%;
+  }
+
+  .back-photo{
+    width: 330%;
+  }
+
+  .room-pic{
+    padding-left: 0;}
+
+  .room-pic img{
+    width: 100%;
+    padding: 3% 5%;
+    
+  }
+
+  .client{
+    display: block;
+  }
+
+  .c-f-pic img{
+    width: 100%;
+  }
+
+  .client-prof img{
+    width: 100%;
+    height: 50%;
+  }
+
+  .about-t hr{
+    width: 90%;
+
+  }
+
+
+
 
   .img-t2{
     text-transform: uppercase;
@@ -198,8 +500,12 @@ hr.text-line-l{
   .h-pic2{
     display: flex;
     flex-direction: row;
+    padding: 5% 5%;
   }
 
+  .h-pic2 img{
+    width: 70%;
+  }
 
   hr.text-line-l {
     border: 1px solid black;
